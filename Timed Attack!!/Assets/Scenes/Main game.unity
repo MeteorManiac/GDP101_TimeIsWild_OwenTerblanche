@@ -159,7 +159,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.92852014, g: 1, b: 0.5424528, a: 0}
+  m_BackGroundColor: {r: 0.4245283, g: 0.33675894, b: 0.1501869, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -207,6 +207,79 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &587666160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 229258438388482647, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}
+  m_PrefabInstance: {fileID: 229258438126855818}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &587666164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587666160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: c47762e6f1b225a45bac21097aba8597, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!50 &587666166
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587666160}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &587666167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587666160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7539972b1a49bdc41887b2a0c755ff6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 1449216768788365069, guid: 4c352f49b21013b4e858e8758eaac93d, type: 3}
+  bulletSpeed: 8
+  bulletFlyTime: 5
+  firingRate: 0.2
+  isShooting: 0
 --- !u!1 &665466394
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +445,23 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1963830391 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4903993347726882173, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}
+  m_PrefabInstance: {fileID: 229258438126855818}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1963830394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963830391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b39398367957254f8c665790ea60ed2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &229258438126855818
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -379,6 +469,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 52016733363165729, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 52016733363165729, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.06
+      objectReference: {fileID: 0}
     - target: {fileID: 229258438388482647, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}
       propertyPath: m_Name
       value: PlayerTank
@@ -427,5 +525,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3182213793650732175, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256310844095485319, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}
+      propertyPath: m_Color.b
+      value: 0.48593804
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256310844095485319, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8496825
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256310844095485319, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268495048627309466, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 1449216768788365069, guid: 4c352f49b21013b4e858e8758eaac93d, type: 3}
+    - target: {fileID: 7268495048627309466, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}
+      propertyPath: firingRate
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268495048627309466, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}
+      propertyPath: isShooting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268495048627309466, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}
+      propertyPath: bulletSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7268495048627309466, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}
+      propertyPath: bulletFlyTime
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7268495048627309466, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d64f097b61a0fc34db6e5b49c61eccaa, type: 3}

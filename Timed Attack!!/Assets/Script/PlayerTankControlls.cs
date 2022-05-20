@@ -1,12 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerTankControlls : MonoBehaviour
 {
   [SerializeField] float turnSpeed = 1f;
   [SerializeField] float moveSpeed = 0.01f;
-  // Start is called before the first frame update
+
+  BulletCannon bullet;
+ 
+  void Awake() 
+  {
+    bullet = GetComponent<BulletCannon>();
+  }
   void Start()
   {
         
@@ -24,5 +31,13 @@ public class PlayerTankControlls : MonoBehaviour
       {
           transform.Translate(new Vector3(0, Input.GetAxis("Vertical"), 0) * moveSpeed);
       }
+  }
+
+  void OnFire(InputValue value)
+  {
+    if(bullet !=null)
+    {
+      bullet.isShooting = value.isPressed;
+    }
   }
 }
