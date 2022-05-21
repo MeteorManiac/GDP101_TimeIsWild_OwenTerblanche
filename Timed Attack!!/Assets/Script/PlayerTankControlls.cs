@@ -7,13 +7,7 @@ public class PlayerTankControlls : MonoBehaviour
 {
   [SerializeField] float turnSpeed = 1f;
   [SerializeField] float moveSpeed = 0.01f;
-
-  BulletCannon bullet;
  
-  void Awake() 
-  {
-    bullet = GetComponent<BulletCannon>();
-  }
   void Start()
   {
         
@@ -33,11 +27,11 @@ public class PlayerTankControlls : MonoBehaviour
       }
   }
 
-  void OnFire(InputValue value)
-  {
-    if(bullet !=null)
-    {
-      bullet.isShooting = value.isPressed;
-    }
-  }
+  // void OnFire(InputValue value)
+  // {
+  //   if(bullet !=null)
+  //   {
+  //     bullet.isShooting = value.isPressed;
+  //   }
+  // }
 }
