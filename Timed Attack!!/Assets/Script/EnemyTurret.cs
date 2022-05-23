@@ -4,24 +4,20 @@ using UnityEngine;
 
 public class EnemyTurret : MonoBehaviour
 {
-    Rigidbody2D rb;
-    Transform target;
-    Vector2 moveDirection;
+    public Transform playerTank;
+    private Rigidbody2D rb;
+    
     // Start is called before the first frame update
     void Start()
     {
-        target = GameObject.Find("PlayerTank").transform;
+        rb = this.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(target)
-        {
-            Vector3 direction = (target.position - transform.position).normalized;
-            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            rb.rotation = angle;
-            moveDirection= direction;
-        }
+       Vector3 direction = playerTank.position - transform.position;
+       float angle = Mathf.Atan2(direction.y, direction.x)* Mathf.Rad2Deg-90;
+       rb.rotation = angle;
     }
 }
