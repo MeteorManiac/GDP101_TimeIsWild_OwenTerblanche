@@ -6,7 +6,9 @@ public class EnemyTurret : MonoBehaviour
 {
     public Transform playerTank;
     private Rigidbody2D rb;
-    
+    public Transform shootPoint;
+    public GameObject bulletPf;
+    public float bulletforce = 20f;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +32,14 @@ public class EnemyTurret : MonoBehaviour
         Vector3 direction = playerTank.position - transform.position;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90;
         rb.rotation = angle;
+        Shoot();
     }
 
+    void Shoot()
+    {
+        GameObject bullet = Instantiate(bulletPf, shootPoint.position, shootPoint.rotation);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        rb.AddForce(shootPoint.up * bulletforce, ForceMode2D.Impulse);
+    }
 }
 

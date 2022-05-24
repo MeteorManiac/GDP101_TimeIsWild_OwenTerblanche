@@ -5,25 +5,37 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     public Transform[] points;
+    private float waitTime;
+    public float startWaitTime;
     
-    int current;
+    int picker;
     
     public float speed;
     
     void Start()
     {
-        current = 0;    
+        waitTime = startWaitTime;
+        picker = Random.Range(0, points.Length);    
     }
 
     void Update()
     {
-        if (transform.position != points[current].position)
-        {
-            transform.position = Vector3.MoveTowards(transform.position,points[current].position,speed *Time.deltaTime);
-        }    
-        else
-        {
-            current = (current + 1) % points.Length;
-        }
+       transform.position = Vector2.MoveTowards(transform.position, points[picker].position, speed * Time.deltaTime);
+       
+    //    Vector3 relativePosition = points.position - transform.position;
+    //    transform.rotation = Quaternion.LookRotation (relativePosition);
+
+       if(Vector2.Distance(transform.position, points[picker].position)< 0.2f)
+       {
+           if(waitTime <= 0)
+           {
+               picker = Random.Range(0, points.Length); 
+               waitTime = startWaitTime;
+           }
+           else
+           {
+               waitTime -= Time.deltaTime;
+           }
+       }
     }
 }
