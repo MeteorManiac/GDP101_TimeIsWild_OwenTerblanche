@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7349390225647465835
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1220679656234915410, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_Color.b
+      value: 0.066666655
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679656234915410, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_Color.g
+      value: 0.48230708
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679656234915410, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_Color.r
+      value: 0.62352943
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657249162491, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_Color.b
+      value: 0.96381277
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657249162491, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8915094
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657249162491, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490216, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490216, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.054911405
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490216, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.55031186
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490216, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.17041191
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490216, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490216, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490216, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490216, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490216, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490216, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490216, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490217, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490217, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: points.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490217, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: points.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490217, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: points.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220679657913490390, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+      propertyPath: m_Name
+      value: Speedy Enemy Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -4511160561660155529, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 1796c78e3daef764d86415980b23dbe1, type: 3}
