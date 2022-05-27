@@ -954,10 +954,10 @@ PrefabInstance:
       propertyPath: playerTank
       value: 
       objectReference: {fileID: 300121364}
-    - target: {fileID: 0}
-      propertyPath: playerTank
-      value: 
-      objectReference: {fileID: 300121364}
+    - target: {fileID: 8434959350426725954, guid: 8e471dde164d4ff4aaa3e0f3a763a602, type: 3}
+      propertyPath: points.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8434959350426725954, guid: 8e471dde164d4ff4aaa3e0f3a763a602, type: 3}
       propertyPath: points.Array.data[0]
       value: 

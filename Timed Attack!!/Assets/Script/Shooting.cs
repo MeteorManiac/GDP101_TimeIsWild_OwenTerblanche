@@ -6,7 +6,7 @@ public class Shooting : MonoBehaviour
 {
     public Transform shootPoint;
     public GameObject bulletPf;
-    public float bulletforce = 20f;
+    public float bulletforce = 3f;
 
     void Update()
     {
