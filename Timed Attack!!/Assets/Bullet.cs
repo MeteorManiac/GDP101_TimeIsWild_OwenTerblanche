@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    void Start()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(gameObject, 10);
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            var enemy = other.gameObject.GetComponent<EnemyMovement>();
+            enemy.Kill();
+        }
     }
 
     

@@ -39,7 +39,8 @@ public class EnemyMovement : MonoBehaviour
        }
     }
 
-    // void Death();
-    // {
-    // }
+    public void Kill()
+    {
+       Destroy(gameObject);
+    }
 }
