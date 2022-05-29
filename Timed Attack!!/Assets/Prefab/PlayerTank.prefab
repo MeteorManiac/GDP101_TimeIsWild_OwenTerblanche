@@ -313,6 +313,7 @@ GameObject:
   - component: {fileID: 7266789016817319210}
   - component: {fileID: 8189935083179538424}
   - component: {fileID: 8189935081741647737}
+  - component: {fileID: 727103203507590654}
   m_Layer: 6
   m_Name: PlayerTank
   m_TagString: Player
@@ -469,6 +470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootPoint: {fileID: 4313965161167660531}
   bulletPf: {fileID: 1449216768788365069, guid: 4c352f49b21013b4e858e8758eaac93d, type: 3}
+  bombPf: {fileID: 0}
   bulletforce: 20
 --- !u!61 &8189935081741647737
 BoxCollider2D:
@@ -495,6 +497,32 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 1.4016575, y: 1.301243}
+  m_EdgeRadius: 0
+--- !u!61 &727103203507590654
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7266789017633147651}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &8185174851171588838
 GameObject:

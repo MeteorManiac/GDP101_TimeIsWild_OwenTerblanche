@@ -27,6 +27,12 @@ public class PlayerTankControlls : MonoBehaviour
       }
   }
 
+  public void Kill()
+    {
+       Destroy(gameObject);
+       Debug.Log("You Lose!!!");
+    }
+
   // void OnFire(InputValue value)
   // {
   //   if(bullet !=null)
