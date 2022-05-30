@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
         {
             var enemy = other.gameObject.GetComponent<EnemyMovement>();
             enemy.Kill();
+            Destroy(gameObject, 5);
         }
     }
 
