@@ -11,6 +11,7 @@ public class EnemyShooting : MonoBehaviour
         {
             var player = other.gameObject.GetComponent<PlayerTankControlls>();
             player.Kill();
+            Destroy(gameObject, 5);
         }
     }
 }
