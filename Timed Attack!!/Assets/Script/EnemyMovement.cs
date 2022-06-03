@@ -55,6 +55,7 @@ public class EnemyMovement : MonoBehaviour
 
     public void Kill()
     {
+       ScoreManager.instance.AddPoint();
        Destroy(gameObject);
        Debug.Log("You Win");
     }

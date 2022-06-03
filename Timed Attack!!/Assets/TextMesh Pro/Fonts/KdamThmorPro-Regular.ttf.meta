@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: c36d2003604edc84889f3dccc3dd8c2a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Kdam Thmor Pro
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4634a93c195d6394c93f0647a60ed301, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
