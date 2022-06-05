@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyShooting : MonoBehaviour
 {
@@ -11,7 +12,12 @@ public class EnemyShooting : MonoBehaviour
         {
             var player = other.gameObject.GetComponent<PlayerTankControlls>();
             player.Kill();
-            Destroy(gameObject, 5);
+            SceneManager.LoadScene(1);
         }
+    }
+
+    void Start()
+    {
+        Destroy(gameObject, 5);
     }
 }
