@@ -336,7 +336,6 @@ MonoBehaviour:
   EnBullet: {fileID: 7124615163485335796, guid: 7e550e6ead01a4f4ea1c320b18896ec6, type: 3}
   shootPoint: {fileID: 1220679656874505750}
   bulletPf: {fileID: 7124615163485335796, guid: 7e550e6ead01a4f4ea1c320b18896ec6, type: 3}
-  bombPf: {fileID: 0}
   bulletforce: 4
 --- !u!61 &1220679657913490218
 BoxCollider2D:

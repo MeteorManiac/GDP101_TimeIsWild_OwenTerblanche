@@ -17,7 +17,6 @@ public class EnemyMovement : MonoBehaviour
     private bool canShoot;
     public Transform shootPoint;
     public GameObject bulletPf;
-    public GameObject bombPf;
     public float bulletforce = 3f;
 
     
